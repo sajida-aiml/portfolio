@@ -450,6 +450,90 @@ footer {
     line-height: 1.6;
 }
 
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links a {
+    margin: 8px;
+    font-size: 0.95rem;
+  }
+
+  /* Sections padding */
+  .section {
+    padding: 120px 20px 40px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  /* Projects */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Skills + Services */
+  .skills-grid,
+  .services-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact */
+  .contact-container {
+    padding: 80px 20px;
+  }
+
+  .contact-left,
+  .contact-right {
+    padding: 25px;
+  }
+
+  /* Images */
+  .project-card img {
+    height: 160px;
+  }
+
+}
+
+/* ================= EXTRA SMALL PHONES ================= */
+
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .tagline {
+    font-size: 0.95rem;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .social-links a {
+    font-size: 1.3rem;
+  }
+
+}
 
 
 
