@@ -7,32 +7,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
-    <div class="logo">Sajida S</div>
-    <div class="nav-links">
-        <a onclick="showSection('home')">Home</a>
-        <a onclick="showSection('about')">About</a>
-        <a onclick="showSection('skills')">Skills</a>
-        <a onclick="showSection('projects')">Projects</a>
-        <a onclick="showSection('services')">Services</a>
-        <a onclick="showSection('contact')">Contact</a>
+  <div class="logo">Sajida S</div>
 
-                                         
-    </div>
+  <!-- Hamburger -->
+  <div class="menu-icon" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- Nav links -->
+  <div class="nav-links" id="navLinks">
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('about')">About</a>
+    <a onclick="showSection('skills')">Skills</a>
+    <a onclick="showSection('projects')">Projects</a>
+    <a onclick="showSection('services')">Services</a>
+    <a onclick="showSection('contact')">Contact</a>
+  </div>
 </nav>
+
 
 <!-- HOME -->
 <section id="home" class="section active home">
     <h1 class="animate name">Sajida S</h1>
-    <h3 class="animate subtitle">MSc Computer Science (AI & ML)</h3>
-    <p class="animate tagline">
-        Building intelligent systems and clean web solutions
-    </p>
+    <h3 class="animate subtitle">
+MSc Computer Science (AI & ML) student specializing in machine learning and Python Django web development. </h3>
+    <p class="animate tagline">   </p>
 
     <div class="animate links social-links">
     <a href="https://github.com/sajida-aiml" target="_blank" aria-label="GitHub">
@@ -91,7 +97,7 @@
     <div class="skill-card animate-item">
       <i class="fas fa-tools"></i>
       <h3>Tools & Platforms</h3>
-      <p>GitHub, Kaggle, Google Colab, MS Excel</p>
+      <p>Git and GitHub, Kaggle, Google Colab, MS Excel</p>
     </div>
 
     <div class="skill-card animate-item">
@@ -257,7 +263,7 @@ function showSection(id) {
 
     <!-- LEFT SIDE -->
     <div class="contact-left">
-      <h2>Contact Me</h2>
+      <h2 class="animate-item">Contact Me</h2>
       <p>
         Feel free to reach out for collaborations, projects,
         or just a friendly hello 👋
@@ -265,13 +271,13 @@ function showSection(id) {
 
       <div class="contact-info">
         <p><i class="fas fa-envelope"></i> sajidashafi87@gmail.com</p>
-        <p><i class="fas fa-location-dot"></i> India</p>
+        <p><i class="fas fa-location-dot"></i> Kasaragod,Kerala,India</p>
       </div>
     </div>
 
     <!-- RIGHT SIDE -->
     <div class="contact-right">
-      <h2>Send a Message</h2>
+      <h2 class="animate-item">Send a Message</h2>
 
       <form id="contact-form">
         <input type="text" name="name" placeholder="Your Name" required>
@@ -322,8 +328,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 <footer>
-    © 2025 Sajida Shafi | All Rights Reserved
+    © 2025 Sajida S | All Rights Reserved
 </footer>
+<script>
+function toggleMenu() {
+  document.getElementById("navLinks").classList.toggle("show");
+}
+</script>
+</body>
 
 </body>
 </html>

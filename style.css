@@ -534,6 +534,45 @@ footer {
   }
 
 }
+/* ================= MOBILE NAVBAR ================= */
+
+.menu-icon {
+  display: none;
+  font-size: 1.6rem;
+  color: #38bdf8;
+  cursor: pointer;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    background: #020617;
+    border-radius: 12px;
+    padding: 16px;
+    flex-direction: column;
+    gap: 14px;
+    width: 180px;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 0;
+    font-size: 1rem;
+  }
+}
 
 
 
